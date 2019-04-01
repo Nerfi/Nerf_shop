@@ -1,18 +1,25 @@
-<div class="container">
-  <div class="row">
+<div class="main-container">
+  <div class="cards">
     <h1>Shirts</h1>
-    <% @shirts.each do |shirt| %>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <%= link_to image_tag(shirt.photo_url), shirt_path(shirt) %>
-          <div class="caption">
+     <% @shirts.each do |shirt| %>
+     <div class="card">
+
+
+            <%= link_to image_tag(shirt.photo_url), shirt_path(shirt) %>
+
+
+
             <h3><%= link_to shirt.name, shirt_path(shirt) %></h3>
             <p><%= shirt.category.name %></p>
             <p>Amount: <%= humanized_money_with_symbol(shirt.price) %></p>
 
-          </div>
-        </div>
       </div>
+
+
+
     <% end %>
   </div>
 </div>
+
+
+
