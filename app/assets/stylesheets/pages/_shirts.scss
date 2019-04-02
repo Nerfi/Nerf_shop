@@ -2,15 +2,25 @@
   //display:flex;
 }
 .cards{
-  display: flex;
-  grid-template-columns:  1fr 1fr  ;
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr ;
   grid-gap: 16px;
-  padding-top: 16px;
+  padding-top: 40px;
+
+
+  //width: 100px;
 
 }
 .card{
-  padding-top:50px;
+  padding-top:20px;
+
 }
+
+.title{
+  text-align: center;
+}
+
+
 
 
 @media(max-width: 992px) {
@@ -24,3 +34,6 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+
