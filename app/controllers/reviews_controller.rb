@@ -1,10 +1,10 @@
 class ReviewsController < ApplicationController
 
-     before_action :set_shirt, only: [ :show]
+     #before_action :set_shirt, only: [:show]
 
 
     def create
-    @shirt = shirt.find(params[:shirt_id])
+    @shirt = Shirt.find(params[:shirt_id])
     @review = Review.new(review_params)
     @review.shirt = @shirt
     if @review.save!
