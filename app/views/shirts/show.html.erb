@@ -16,6 +16,19 @@
       <%= hidden_field_tag 'shirt_id', @shirt.id %>
       <%= submit_tag 'Purchase', class: 'btn btn-primary' %>
       <% end %>
+      <br>
+
+              <div id="reviews">
+              <% if @shirt.reviews.blank? %>
+              Be the first to leave a review for <%= @shirt.name %>
+              <% else %>
+              <% @shirt.reviews.each do |review| %>
+              <%= render 'reviews/show', review: review %>
+          <% end %>
+        <% end %>
+      </div>
+      <%= render 'reviews/form', shirt: @shirt, review: @review %>
+
 
     </div>
   </div>

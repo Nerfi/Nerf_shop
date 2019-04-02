@@ -8,6 +8,7 @@ class ShirtsController < ApplicationController
 
   def show
     @shirt = Shirt.find(params[:id])
+    @review = Review.new
 
   end
 
