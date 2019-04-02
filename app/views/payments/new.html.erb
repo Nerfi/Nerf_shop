@@ -1,4 +1,9 @@
-<h1>Purchase of shirt <%= @order.shirt_sku %></h1>
+
+<div class="cotainer">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-6">
+
+      <h1>Purchase of shirt <%= @order.shirt_sku %></h1>
 
 <%= form_tag order_payments_path(@order) do %>
   <article>
@@ -17,3 +22,9 @@
     data-currency="<%= @order.amount.currency %>"></script>
 
 <% end %>
+
+
+    </div>
+  </div>
+
+</div>
