@@ -1,1 +1,1 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+A simple rails app based on a e-commerce store , using stripe, ajax to add a reviews , devise to authenticate the user, boostrap, sql as a database, with some JS in the front end 
